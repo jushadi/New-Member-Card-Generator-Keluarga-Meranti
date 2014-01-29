@@ -19,7 +19,7 @@ $html_str .= 'h4{margin: 0px;font-weight: bold;text-align: center;padding-bottom
 $html_str .= 'hr{margin: 0px;border: 1px solid '.$sysconf['membercard_print_settings']['card_header_color'].';position: relative;}'."\n";
 $html_str .= 'td{padding:4px 10px 5px 10px;border-top:thin; border-right:thin;}'."\n";
 if (!$_GET[mirror])   
-{ $html_str .= '#kontainer_div{z-index:1;position: relative; width:'.($sysconf['membercard_print_settings']['card_box_width']*37.795275591).'px; height:'.($sysconf['membercard_print_settings']['card_box_height']*37.795275591).'px;margin-bottom:'.($card_items_margin*37.795275591).'px;border:#CCCCCC solid 1px;-moz-border-radius: 8px;border-radius: 8px;}'."\n"; }
+{ $html_str .= '#kontainer_div{z-index:1;position: relative; width:'.($sysconf['membercard_print_settings']['card_box_width']*37.795275591).'px; height:'.($sysconf['membercard_print_settings']['card_box_height']*37.795275591).'px;margin-bottom:'.($card_items_margin*37.795275591).'px;border:#CCCCCC solid 1px;-moz-border-radius: 8px;border-radius: 8px;}'."\n"; }//J u s h a d i   A r m a n  S a z
     else                                
 { $html_str .= '#kontainer_div{z-index:1;position: relative; width:'.($sysconf['membercard_print_settings']['card_box_width']*37.795275591).'px; height:'.($sysconf['membercard_print_settings']['card_box_height']*37.795275591).'px;margin-bottom:'.($card_items_margin*37.795275591).'px;border:#CCCCCC solid 1px;-moz-border-radius: 8px;border-radius: 8px;-moz-transform:rotateY(180deg);}'."\n"; }
 $html_str .= '#header1{z-index:2;position: absolute;left: 0px;top: 0px;width:145px;height: 45px;color:'.$sysconf['membercard_print_settings']['card_header_color'].'; border-top-left-radius: 8px;border-top-right-radius: 8px;padding-bottom: 5px;padding-left: 39px;padding-top: 10px;}'."\n";
@@ -78,19 +78,20 @@ $html_str .= ''.( $sysconf['membercard_print_settings']['card_show_mail_address_
 $html_str .= '</div>';
 $html_str .= '<div id="photo_blank_div"><br /><br />Foto Ukuran:<br />'.$sysconf['membercard_print_settings']['card_photo_width'].' X '.$sysconf['membercard_print_settings']['card_photo_height'].' cm</div>';
 $html_str .= '<div id="photo_div"><div align="center"><img width="'.($sysconf['membercard_print_settings']['card_photo_width']*37.795275591+2).'px" height="'.($sysconf['membercard_print_settings']['card_photo_height']*37.795275591+2).'px" style="border-radius: 4px; -moz-border-radius: 4px;-khtml-border-radius: 4px;-webkit-border-radius: 4px;" src="'.SENAYAN_WEB_ROOT_DIR.IMAGES_DIR.'/persons/'.$card['member_image'].'"/></img></div></div>';
-$html_str .= ''.( $sysconf['membercard_print_settings']['card_show_type_label']?'':'<!--').'<div class="mtype_div"><img style="width: 100%; height:100%; border-radius: 1px;" src="/x3/images/member_card/1white.png"><div class="mtype">'.$card['member_type_name'].'</div></div>'.( $sysconf['membercard_print_settings']['card_show_type_label']?'':'-->').'';
+$html_str .= ''.( $sysconf['membercard_print_settings']['card_show_type_label']?'':'<!--').'<div class="mtype_div"><img style="width: 100%; height:100%; border-radius: 1px;" src="/x3/images/member_card/1white.png"><div class="mtype">'.$card['member_type_name'].'</div></div>'.( $sysconf['membercard_print_settings']['card_show_type_label']?'':'-->').''; //Jushadi
 $html_str .= ''.( $sysconf['membercard_print_settings']['card_show_expired_label']?'':'<!--').'<div class="exp_div">'.__('Expiry Date').' : '.$card['expire_date'].'</div>'.( $sysconf['membercard_print_settings']['card_show_expired_label']?'':'-->').'';
 $html_str .= ''.( $sysconf['membercard_print_settings']['card_show_barcode_label']?'':'<!--').'<div class="barcode_div">';
-$html_str .= '<div style="text-align: right;"><img  src="'.SENAYAN_WEB_ROOT_DIR.IMAGES_DIR.'/barcodes/'.str_replace(array(' '), '_', $card['member_id']).'.png" style="width: 100%; height:25px; border-radius: 3px; -moz-border-radius: 3px;-khtml-border-radius: 3px;-webkit-border-radius: 3px;"></img></div></div>'.( $sysconf['membercard_print_settings']['card_show_barcode_label']?'':'-->').'';
+$html_str .= '<div style="text-align: right;"><img  src="'.SENAYAN_WEB_ROOT_DIR.IMAGES_DIR.'/barcodes/'.str_replace(array(' '), '_', $card['member_id']).'.png" style="width: 100%; height:25px; border-radius: 3px; -moz-border-radius: 3px;-khtml-border-radius: 3px;-webkit-border-radius: 3px;"></img></div></div>'.( $sysconf['membercard_print_settings']['card_show_barcode_label']?'':'-->').''; 
 $html_str .= '</td>';
 $html_str .= '<td valign="top">';
 $html_str .= '<div id="kontainer_div">';
 $html_str .= '<div><img height="'.($sysconf['membercard_print_settings']['card_box_height']*37.795275591).'px" width="'.($sysconf['membercard_print_settings']['card_box_width']*37.795275591).'px" src="'.SENAYAN_WEB_ROOT_DIR.IMAGES_DIR.'/member_card/Rearcard_'.$card['member_type_name'].'" style="border-radius: 8px; -moz-border-radius: 8px;-khtml-border-radius: 8px;-webkit-border-radius: 8px;"></img></div>';
 $html_str .= ''.( $sysconf['membercard_print_settings']['card_show_back_header']?'':'<!--').'<div id="logo_div"><img height="45px" width="45px" src="'.SENAYAN_WEB_ROOT_DIR.IMAGES_DIR.'/member_card/Logo_'.$card['member_type_name'].'"></img></div>';
-$html_str .= '<div id="header1_div"><img style="width: 100%; height:100%; border-top-left-radius: 8px;border-top-right-radius: 8px;" src="/x3/images/member_card/1blue.png">';
+$html_str .= '<div id="header1_div"><img style="width: 100%; height:100%; border-top-left-radius: 8px;border-top-right-radius: 8px;" src="/x3/images/member_card/1blue.png">'; // Jushadi  Arman  Saz
 $html_str .= '<div id="header1">';
 $html_str .= '<h1>'.$sysconf['membercard_print_settings']['card_front_header1_text'].'</h1>';
 $html_str .= '<h2>'.$sysconf['membercard_print_settings']['card_front_header2_text'].'</h2></div></div>'.( $sysconf['membercard_print_settings']['card_show_back_header']?'':'-->').'';
+//Jushadi Arman Saz
 //$html_str .= '<div id="header1_div">';
 //$html_str .= '<h3>'.$sysconf['membercard_print_settings']['card_back_header1_text'].'</h3>';
 //$html_str .= '<h4>'.$sysconf['membercard_print_settings']['card_back_header2_text'].'</h4></div>'.( $sysconf['membercard_print_settings']['card_show_back_header']?'':'-->').'';
@@ -110,5 +111,5 @@ $html_str .= '</td>';
 	    $html_str .= '<a style="font-size: 9px;" href="#" onclick="window.print()">Print Again</a><br />'."\n";
     $html_str .= '<script type="text/javascript">self.print();</script>'."\n";
     $html_str .= '</body></html>'."\n";
-
+// Jushadi
 ?>
