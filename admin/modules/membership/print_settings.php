@@ -1,13 +1,12 @@
 <?php
 /**
- *
  * Copyright (C) 2007,2008  Arie Nugraha (dicarve@yahoo.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
- *
+ *  Jushadi Arman Saz
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -18,6 +17,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
+
 
 /* Global application configuration */
 
@@ -49,7 +49,7 @@ if (isset($_POST['updateSettings'])) {
     // reset
  // initialize template arrays
     $template = array('theme' => $sysconf['print']['membercard']['theme'], 'css' => $sysconf['template']['css']);
- // template
+ // template Jushadi Arman Saz
     $template['theme'] = $_POST[$setting_type];
     $template['css'] = str_replace($sysconf['template']['theme'], $template['theme'], $sysconf['template']['css']);
     $dbs->query("UPDATE setting SET setting_value='".$dbs->escape_string(serialize($template))."' WHERE setting_name='$setting_name'");
@@ -67,7 +67,7 @@ if (isset($_GET['type'])) {
 }
 
 if (!in_array($type, array('barcode', 'label', 'membercard'))) {
-  $type = 'barcode';
+  $type = 'barcode'; // Jushadi  Arman  Saz
 }
 
 
@@ -80,7 +80,7 @@ if (!in_array($type, array('barcode', 'label', 'membercard'))) {
     }
 
 
-// create form instance
+// create form instance Jushadi Arman Saz
 $form = new simbio_form_table_AJAX('mainForm', $_SERVER['PHP_SELF'], 'post');
 $form->submit_button_attr = 'name="updateSettings" value="'.__('Save Settings').'" class="button"';
 // form table attributes
