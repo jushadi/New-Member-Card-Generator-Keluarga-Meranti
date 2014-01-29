@@ -28,3 +28,5 @@ saya tidak bertanggung jawab atas segala kerusakan yang mungkin diakibatkan jadi
 saya juga tidak ingin memudahkan pekerjaan, beberapa orang berpikir pekerjaan yang dimudahkan oleh teknologi adalah sama dengan tidak kerja
 
 saya tidak menyertakan gambar jadi ikon gear tidak akan muncul ^_^
+
+btw kode sumber ini saya lepas karena terlalu sulit saya terapkan untuk di instansi tempat saya berusaha mengabdi, jika dikira SLiMS itu jelek maka saya akan dengan senang hati membantu 1000 lainnya lebih baik agar ada bukti nyata bahwa SLiMS memang bagus dan mungkin saat itu saya sudah enggan membantu, sungguh lebih enak mengajari orang yang datang jauh-jauh dengan niat belajar dibanding membantu orang yang tidak ada keinginan belajar, atau menganggap pekerjaannya sebatas beban dan tidak ada keinginan untuk berbuat lebih baik :)
