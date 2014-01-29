@@ -6,7 +6,7 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
- *
+ *  Jushadi Arman Saz
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -103,7 +103,7 @@ if (isset($_POST['itemID']) AND !empty($_POST['itemID']) AND isset($_POST['itemA
         utility::jsAlert(__('Selected items added to print queue'));
     }
     exit();
-}
+}//Jushadi Arman Saz
 
 // card pdf download
 if (isset($_GET['action']) AND $_GET['action'] == 'print') {
@@ -214,7 +214,7 @@ $table_spec = 'member AS m
 // create datagrid
 $datagrid = new simbio_datagrid();
 $datagrid->setSQLColumn('m.member_id',
-    'm.member_id AS \''.__('Member ID').'\'',
+    'm.member_id AS \''.__('Member ID').'\'', // Jushadi Arman Saz
     'm.member_name AS \''.__('Member Name').'\'',
     'mt.member_type_name AS \''.__('Membership Type').'\'');
 $datagrid->setSQLorder('m.last_update DESC');
