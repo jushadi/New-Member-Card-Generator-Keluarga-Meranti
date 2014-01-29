@@ -6,7 +6,7 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
- *
+ *  Jushadi Arman Saz
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -18,7 +18,8 @@
  *
  */
 
-/* Membership module submenu items */
+
+/* Membership module submenu items Jushadi*/ 
 // IP based access limitation
 do_checkIP('smc');
 do_checkIP('smc-membership');
@@ -32,3 +33,4 @@ $menu[] = array(__('Member Card Printing'), MODULES_WEB_ROOT_DIR.'membership/mem
 $menu[] = array(__('Member Card Type'), MODULES_WEB_ROOT_DIR.'membership/member_card_type	.php', __('Edit Member Type'));
 $menu[] = array(__('Export Data'), MODULES_WEB_ROOT_DIR.'membership/export.php', __('Export Members Data To CSV File'));
 $menu[] = array(__('Import Data'), MODULES_WEB_ROOT_DIR.'membership/import.php', __('Import Members Data From CSV File'));
+// Jushadi  Arman Saz
