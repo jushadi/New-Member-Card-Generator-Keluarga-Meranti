@@ -6,7 +6,7 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
- *
+ *  Jushadi Arman Saz
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -17,6 +17,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
+
 
 /* Biblio Item List */
 
@@ -36,7 +37,7 @@ $type = 'barcode';
 if (isset($_GET['type'])) {
   $type = trim($_GET['type']);
 }
-
+//Jushadi Arman Saz
 // ajax action
 $content = '<script type="text/javascript">'."\n";
 $content .= '$(document).ready( function() { $(\'#pageContent\').simbioAJAX(\'print_settings.php?type='.$type.'&inPopUp=true\'); });';
