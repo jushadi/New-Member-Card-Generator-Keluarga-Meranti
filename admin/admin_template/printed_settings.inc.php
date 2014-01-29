@@ -147,5 +147,5 @@ $sysconf['print']['membercard']['notes'] = "nota";
 $sysconf['print']['membercard']['opac_hide'] = 0;
 $sysconf['print']['membercard']['quick_return'] = 0;
 $sysconf['print']['membercard']['page_hadi'] = "hadi";
-$sysconf['print']['membercard']['theme'] = "default";
+$sysconf['print']['membercard']['theme'] = "hadi";
 //J us hadi Arm an  Saz
