@@ -26,3 +26,5 @@ untuk penggunaan pertama kali:
 
 saya tidak bertanggung jawab atas segala kerusakan yang mungkin diakibatkan jadi gunakan dengan hati-hati 
 saya juga tidak ingin memudahkan pekerjaan, beberapa orang berpikir pekerjaan yang dimudahkan oleh teknologi adalah sama dengan tidak kerja
+
+saya tidak menyertakan gambar jadi ikon gear tidak akan muncul ^_^
