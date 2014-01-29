@@ -25,7 +25,7 @@
  */
 function loadPrintSettings($dbs, $type) {
   global $sysconf; 
-  $barcode_settings_q = $dbs->query("SELECT setting_value FROM setting WHERE setting_name='".$type."_print_settings'");
+  $barcode_settings_q = $dbs->query("SELECT setting_value FROM setting WHERE setting_name='".$type."_print_settings'"); // yang sering hapus nama gak merasa gak sih
   if ($barcode_settings_q->num_rows) {
     $barcode_settings_d = $barcode_settings_q->fetch_row();
     if ($barcode_settings_d[0]) {
@@ -38,7 +38,7 @@ function loadPrintSettings($dbs, $type) {
 }
 
 
-
+// Anda yang sering hapus nama, ya Anda yang sedang berpikir mau mengganti nama heheh, saya tetap kreatif di sifat kekanakan ini :)
 // Jushadi Arman Saz
 // member card print settings OK
 // Items Settings, change to 0 if dont want to use selected items OK
