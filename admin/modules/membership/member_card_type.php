@@ -6,7 +6,7 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
- *
+ *  Jushadi Arman Saz
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -17,6 +17,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
+
 
 /* Member Type Management section */
 
@@ -62,7 +63,7 @@ if (isset($_POST['saveData']) AND $can_read AND $can_write) {
     } else {
         $data['member_type_name'] = $dbs->escape_string($memberTypeName);
 
-
+//Jushadi Arman  Saz
         //hadi image uploading
 		//hadi_front_card
 		    if (!empty($_FILES['input_front_bg']) AND $_FILES['input_front_bg']['size']) { //field form
@@ -124,7 +125,7 @@ if (isset($_POST['saveData']) AND $can_read AND $can_write) {
             $data['card_signature'] = $dbs->escape_string($upload->new_filename); //database field
             }
         } 
-		
+		//Jushadi  Arman Saz
 		//hadi_card_stamp
 		    if (!empty($_FILES['input_card_stamp']) AND $_FILES['input_card_stamp']['size']) { //field form
             // create upload object
@@ -168,7 +169,7 @@ if (isset($_POST['saveData']) AND $can_read AND $can_write) {
             if ($update) {
                 utility::jsAlert(__('Member Type Successfully Updated'));
 				
-								
+						// J u s h a d i  A r m a n  S a z		
 				
         // update all member expire date
                 @$dbs->query('UPDATE member AS m SET expire_date=DATE_ADD(register_date,INTERVAL '.$data['member_periode'].'  DAY)
@@ -375,5 +376,5 @@ if (isset($_POST['detail']) OR (isset($_GET['action']) AND $_GET['action'] == 'd
     }
 
     echo $datagrid_result;
-}
+}//Jushadi A r m a n  Saz
 /* main content end */
