@@ -13,7 +13,7 @@ berfungsi pada Halaman admin default
 
 
 1. backup semuanya terlebih dahulu atau buat folder eksperimen baru
-2. silakan import file sql (dalam folder install db tambahan) lewat phpmyadmin atau pakai cara gentleman (lewat teks mode)
+2. silakan import file sql lewat phpmyadmin atau pakai cara gentleman (lewat teks mode)
 3. timpa folder dan berkas lainnya)
 untuk penggunaan pertama kali:
 - login sebagai admin
@@ -25,3 +25,4 @@ untuk penggunaan pertama kali:
 - untuk upload gambar masuk ke menu membercard type (akan tampil tipe anggota yang pernah dibuat) silakan dikustom masing-masing gambarnya
 
 saya tidak bertanggung jawab atas segala kerusakan yang mungkin diakibatkan jadi gunakan dengan hati-hati 
+saya juga tidak ingin memudahkan pekerjaan, beberapa orang berpikir pekerjaan yang dimudahkan oleh teknologi adalah sama dengan tidak kerja
