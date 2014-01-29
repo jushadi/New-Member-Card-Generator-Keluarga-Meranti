@@ -61,9 +61,9 @@ $sysconf['print']['membercard']['label_namej'] = "J";
 $sysconf['print']['membercard']['card_header_color'] = "#000099"; //e.g. :#0066FF, green, etc.
 $sysconf['print']['membercard']['label_nameU'] = "U";
 // Front Card Header Jushadi  Arman Saz
-$sysconf['print']['membercard']['card_front_header1_text'] = "KARTU ANGGOTA PERPUSTAKAAN<BR>PROGRAM PASCASARJANA";
+$sysconf['print']['membercard']['card_front_header1_text'] = "KARTU ANGGOTA PERPUSTAKAAN";
 $sysconf['print']['membercard']['card_front_header1_font_size'] = 13;
-$sysconf['print']['membercard']['card_front_header2_text'] = "Kampus UNM Gunung Sari Baru, Jl. Bonto Langkasa, Makassar - 90222<br />Telp. (0411) 830368, Fax. (0411) 855288, e-mail: pasca@unm.ac.id, website: pps.unm.ac.id";
+$sysconf['print']['membercard']['card_front_header2_text'] = "";
 $sysconf['print']['membercard']['card_front_header2_font_size'] = 5;
 $sysconf['print']['membercard']['label_nameS'] = "S";
 // Rear Jushadi Arman  Saz Card Header 
